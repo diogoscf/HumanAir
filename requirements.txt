@@ -1,0 +1,10 @@
+numpy
+scipy
+matplotlib
+pandas
+tabulate
+colorama
+colorlog
+scikit-learn
+tqdm
+sympy

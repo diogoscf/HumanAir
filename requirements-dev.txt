@@ -1,0 +1,12 @@
+-r requirements.txt
+black>=23.7.0
+coverage>=7
+flake8
+mypy
+pytest
+pytest-cov
+tox>=3.8
+pandas-stubs
+types-tabulate
+types-colorama
+types-tqdm

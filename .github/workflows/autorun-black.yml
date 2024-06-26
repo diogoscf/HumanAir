@@ -1,0 +1,31 @@
+name: autorun-black
+
+on:
+  pull_request
+
+jobs:
+  autorun-black:
+    runs-on: ubuntu-latest
+
+    permissions:
+      # Give the default GITHUB_TOKEN write permission to commit and push the changed files back to the repository.
+      contents: write
+
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        ref: ${{ github.head_ref }}
+        token: ${{ secrets.PAT }}
+
+    - name: Install black
+      run: pip install black
+
+    - name: Run black
+      run: black .
+
+    - uses: stefanzweifel/git-auto-commit-action@v5
+      with:
+        commit_message: Format code with black
+        commit_user_name: Black Auto Formatter # defaults to "github-actions[bot]"
+        commit_user_email: 41898282+github-actions[bot]@users.noreply.github.com # defaults to "41898282+github-actions[bot]@users.noreply.github.com"
+        commit_author: Black Auto Formatter <41898282+github-actions[bot]@users.noreply.github.com> # defaults to "username <username@users.noreply.github.com>"

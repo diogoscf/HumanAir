@@ -1,0 +1,7 @@
+aircraft,flights_before_refuelling_min,flights_before_refuelling_max,flights_before_refuelling_avg,flights_before_refuelling_median,distance_before_refuelling_min,distance_before_refuelling_max,distance_before_refuelling_avg,distance_before_refuelling_median,endurance_before_refuelling_min,endurance_before_refuelling_max,endurance_before_refuelling_avg,endurance_before_refuelling_median
+Chad C182,1,1.5,3,1,41.0,778.0,284.8,266.0,0.5,6.6,2.5,2.4
+Australia GA8 #1,1,11,2.8,2,0,367.0,99.7,90.0,0,3.9,1.1,1.0
+Australia GA8 #2,1,8,2.6,2,0,455.0,109.0,92.0,0.1,4.3,1.2,1.0
+Madagascar C182 #1,1,4,1.6,2,49.0,696.0,287.2,252.0,0.5,7.5,2.5,2.2
+Madagascar C182 #2,1,4,1.6,2,0.0,890.0,284.9,250.0,0.5,7.5,2.5,2.2
+South Sudan C182,1,4,1.6,2,0,686.0,196.4,164.0,0.0,6.5,1.9,1.7

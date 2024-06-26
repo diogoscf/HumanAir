@@ -1,0 +1,50 @@
+[project]
+name = "HumanAir"
+authors = [
+    {name = "Diogo Fernandes", email = "contact@diogoscf.eu"},
+]
+description = "DSE HumanAir Programming"
+requires-python = ">=3.9"
+readme = "README.md"
+license = {file = "LICENSE"}
+dependencies = [
+    "numpy",
+    "scipy",
+    "matplotlib",
+    "pandas",
+    "tabulate",
+    "colorama",
+    "colorlog",
+    "scikit-learn",
+    "tqdm",
+]
+dynamic = ["version"]
+
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["HumanAir"]
+
+[tool.setuptools.dynamic]
+version = {attr = "HumanAir.__version__"}
+
+[tool.pytest.ini_options]
+addopts = "--cov=HumanAir --cov-report=term-missing --cov-append"
+testpaths = [
+    "tests",
+]
+
+[tool.coverage.report]
+omit = ["__init__.py"]
+
+[tool.mypy]
+exclude = [
+    'tests',
+    'docs',
+]
+warn_unused_configs = true
+
+[tool.black]
+line-length = 120

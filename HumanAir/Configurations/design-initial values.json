@@ -1,0 +1,72 @@
+{
+    "name": "final_design",
+    "pretty_name": "Final Design",
+    "Contingency": 1.2,
+    "Weights": {
+        "MTOW_N": 25753,
+        "OEW_N": 17651,
+        "MFW_N": 1390,
+        "Wfuel_N": 1922,
+        "Wbat_N": 5094,
+        "Ww_N": 2477,
+        "Wpl_des_kg": 630,
+        "Wpl_max_kg": 720
+    },
+    "Iterations Class I": {
+        "MTOW_kg": 2650.285,
+        "A":0.3632,
+        "B":-81.896,
+        "Aw":0.09,
+        "Bw":14.018,
+        "Wpl_des_kg": 630
+    },
+    "Power_prop": {
+        "E_bat_Wh": 186451,
+        "E_fuel_Wh/kg": 11972,
+        "E_bat_Wh/kg": 350,
+        "P_ptr_kW/kg":1.5,
+        "eta_bat": 0.97,
+        "eta_generator": 0.45,
+        "DoD_bat": 0.8,
+        "eta_electricmotor": 0.925,
+        "eta_powertrain": 0.9216,
+        "eta_p":0.85,
+        "bat": 0.134,
+        "P_req_cruise_W": 217309
+    },
+    "Geometry": {
+        "fus_height_m": 1.8,
+        "fus_length_m": 10.09,
+        "MGC_m": 1.93,
+        "XLEMAC_m": 3.2
+    },
+    "Aero": {
+        "CLmax_clean": 1.6,
+        "CLmax_land": 2.5,
+        "CLmax_TO": 2.6,
+        "CLalpha": 6.24,
+        "CD0": 0.02,
+        "AR": 9.38,
+        "e": 0.82
+    },
+    "Performance": {
+        "W/S_N/m2": 618,
+        "W/P_N/W": 0.114,
+        "Vc_m/s": 60,
+        "range_nm": 600,
+        "endurance":5.2,
+        "climb_rate": 6,
+        "CO2": 50,
+        "CO2_emissions_kg/kg": 3.16
+    },
+    "Landing_gear": {
+        "lm_m": 0.56,
+        "ln_m": 3.2,
+        "ymin_m": 2.2,
+        "Hs_m": 0.9,
+        "Dwm_m": 0.6,
+        "Dwn_m": 0.3,
+        "Wtm_m": 0.2,
+        "Wtn_m": 0.1
+    }
+}
